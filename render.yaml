@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: the-80-percent-game
+    runtime: node
+    plan: free
+    region: frankfurt
+    buildCommand: echo "No build required"
+    startCommand: node 80-percent-game-render-one-file.js
+    healthCheckPath: /
+    autoDeployTrigger: off
