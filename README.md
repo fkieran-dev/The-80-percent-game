@@ -36,3 +36,14 @@ Open http://localhost:3000 in your browser.
 This is a hobby prototype. Rooms and scores live in the server's memory, **not** in a database. A server restart or a free host spin-down can reset an active game. Render's free service may sleep when inactive, causing a delay on the first visit. Do not rely on this for permanent records.
 
 The source is bundled in a single self-contained Node.js launcher. This simplifies uploading and deployment, but is less convenient to edit than the original multi-file project.
+
+## Mobile interface and sound (v1.3)
+
+During a round, your number selector, **all players' scores and alive status**, round number and the latest active rule appear together on one phone screen. Tap **Details** to view full rules, previous rounds and optional prediction inputs.
+
+The **♪ ON/OFF** control in the top right switches sound effects on or off. Sounds are subtle, synthesised in the browser (no downloads), and play for lock-in, results, wins, elimination and rule changes. iPhones only allow sound after a user interaction. Your sound preference is saved on your device.
+
+### Updating an already deployed Render website
+
+If the site was deployed with automatic deployments disabled, go to the Render dashboard, select the game service, then choose **Manual Deploy → Deploy latest commit**. The site will not change simply because GitHub has new code.
+
